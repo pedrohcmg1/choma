@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Compra</title>
+    <link href="stylesss.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <h1 class="mb-4">Finalizar Compra</h1>
+    <div class="table-responsive">
+        <h3>Itens no Carrinho</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho-list">
+                <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+        <p id="valor-total" class="fw-bold">Valor Total: R$ 0.00</p>
+    </div>
+
+    <div class="checkout-form">
+        <h3>Endereço de Entrega</h3>
+        <div class="mb-3">
+            <label for="endereco" class="form-label">Endereço:</label>
+            <input type="text" class="form-control" id="endereco" required>
+        </div>
+        <div class="mb-3">
+            <label for="cidade" class="form-label">Cidade:</label>
+            <input type="text" class="form-control" id="cidade" required>
+        </div>
+        <div class="mb-3">
+            <label for="estado" class="form-label">Estado:</label>
+            <input type="text" class="form-control" id="estado" required>
+        </div>
+        <div class="mb-3">
+            <label for="cep" class="form-label">CEP:</label>
+            <input type="text" class="form-control" id="cep" required>
+        </div>
+
+        <h3>Meio de Pagamento</h3>
+        <div class="mb-3">
+            <label for="meio-pagamento" class="form-label">Escolha o meio de pagamento:</label>
+            <select class="form-select" id="meio-pagamento" required>
+                <option value="cartao-credito">Cartão de Crédito</option>
+                <option value="boleto">Boleto</option>
+                <option value="pix">Pix</option>
+            </select>
+        </div>
+
+        <button onclick="finalizarPedido()" class="btn btn-success">Finalizar Pedido</button>
+    </div>
+
+    <script src="checkout.js"></script>
+</body>
+</html>

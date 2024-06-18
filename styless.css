@@ -1,0 +1,65 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Cor de fundo mais suave */
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block; /* Exibe a imagem como bloco */
+    margin-left: auto; /* Margem esquerda automática */
+    margin-right: auto; /* Margem direita automática */
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura do contêiner pai */
+}
+
+h1 {
+    color: #ffffff; /* Cor do texto branca para contrastar com a cor de fundo */
+    font-size: 2rem; /* Aumentei um pouco o tamanho do título */
+    margin-bottom: 1.5rem; /* Espaçamento inferior aumentado */
+    background-color: #04436b; /* Cor de fundo do cabeçalho */
+    padding: 1rem; /* Adicionei um preenchimento interno */
+    text-align: center; /* Centralizei o texto */
+}
+
+/* Estilo para as tabelas */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem; /* Espaçamento inferior aumentado */
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para os botões */
+.btn {
+    background-color: #04436b;
+    color: #fff;
+    border: none;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #033059;
+}
+
+/* Estilo para o valor total */
+#valor-total {
+    font-size: 1.25rem; /* Aumentei o tamanho do texto */
+    color: #04436b;
+    margin-top: 1.5rem; /* Espaçamento superior aumentado */
+}
+
+/* Estilo para a seção do carrinho */
+.lista_compras {
+    background-color: #fff; /* Fundo branco para destacar a seção */
+    padding: 1.5rem; /* Espaçamento interno aumentado */
+    margin-top: 2rem; /* Espaçamento superior entre as seções */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); /* Sombra suave */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercadinho</title>
+    <link href="styless.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <a> <img src="C:\Users\55449\Downloads\minha_logo.jpeg" alt="logo" width="300" height="200"> <h1 class="mb-4">Mercadinho do Choma</h1></a>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Itens</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="item-list">
+                <!-- Itens serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+    </div>
+
+    <div class="lista_compras">
+        <h3>Carrinho de Compras</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="carrinho-list">
+                <!-- Itens do carrinho serão adicionados aqui dinamicamente -->
+            </tbody>
+        </table>
+        <p id="valor-total" class="fw-bold">Valor Total: R$ 0.00</p>
+        <button onclick="finalizarCompra()" class="btn btn-success">Finalizar Compra</button>
+    </div>
+
+    <script src="scriptsss.js"></script>
+</body>
+</html>
+

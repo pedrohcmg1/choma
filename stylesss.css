@@ -1,0 +1,68 @@
+/* Estilo para o corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Fundo mais suave */
+    color: #333; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+h1 {
+    font-size: 2.5rem; /* Tamanho do título */
+    margin-bottom: 2rem; /* Espaçamento inferior */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estilo para os títulos das seções */
+h3 {
+    font-size: 1.5rem; /* Tamanho do título */
+    margin-bottom: 1rem; /* Espaçamento inferior */
+}
+
+/* Estilo para as tabelas */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem; /* Espaçamento inferior */
+}
+
+th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilo para os campos do formulário */
+.form-label {
+    margin-bottom: 0.5rem; /* Espaçamento inferior */
+}
+
+.form-control {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+.form-select {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #ccc;
+}
+
+/* Estilo para os botões */
+.btn {
+    background-color: #007bff; /* Cor do botão */
+    color: #fff; /* Cor do texto no botão */
+    border: none;
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 0.25rem;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}

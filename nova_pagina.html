@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Edição</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+    <div class="container py-4">
+        <img src="C:\Users\55449\Downloads\minha_logo.jpeg" alt="logo" width="300" height="200">
+        <h1 class="mb-4">Painel de Edição de Mercadorias</h1>
+        <div class="mb-3" id="form-container">
+            <!-- Formulário com classes do Bootstrap para layout e espaçamento -->
+             <input type="text" id="item" placeholder="Item">
+        <input type="number" id="valor" placeholder="Valor">
+        <input type="text" id="descricao" placeholder="Descrição">
+        <button id="adicionar" onclick="create()">Adicionar</button>
+        <button id="salvar" onclick="create()" style="display: none;">Salvar Edição</button>
+        </div>
+        <!-- Tabela responsiva com classes do Bootstrap -->
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Valor</th>
+                        <th>Descrição</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="item-list">
+                    <!-- Itens serão adicionados aqui dinamicamente -->
+                </tbody>
+            </table>
+        </div>
+        <p id="valor-total" class="fw-bold">Valor Total: R$ 0.00</p>
+    </div>
+
+    <script src="scripts.js"></script>
+   
+</body>
+</html>
